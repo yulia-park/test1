@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="운세마루 - 꿈해몽. 꿈에 나온 것들의 의미를 무료로 검색하세요. 돼지꿈, 뱀꿈, 물꿈 등 다양한 꿈해몽 제공.">
+    <meta name="keywords" content="꿈해몽, 꿈풀이, 돼지꿈, 뱀꿈, 물꿈, 무료꿈해몽, 꿈의미">
+    <meta name="author" content="운세마루">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="꿈해몽 - 운세마루">
+    <meta property="og:description" content="꿈의 의미를 무료로 검색하세요">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    
+    <title>꿈해몽 - 운세마루</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header Component Mount Point -->
+    <header id="header-component" class="header" role="banner"></header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main" role="main">
+        <!-- 꿈해몽 Section -->
+        <section id="dream" class="section dream-section active">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-cloud-moon"></i> 꿈해몽</h2>
+                    <p class="section-desc">꿈에서 본 것을 키워드로 검색하면 의미를 알려드립니다.</p>
+                </div>
+                
+                <div class="dream-search-container">
+                    <form id="dream-form" class="dream-form" novalidate>
+                        <div class="search-input-wrapper">
+                            <label for="dream-keyword" class="visually-hidden">꿈 키워드 검색</label>
+                            <input 
+                                type="text" 
+                                id="dream-keyword" 
+                                name="keyword" 
+                                placeholder="예: 돼지, 물, 비행기, 돈..."
+                                autocomplete="off"
+                                required
+                                aria-describedby="dream-hint"
+                            >
+                            <button type="submit" class="search-btn" aria-label="검색">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <p id="dream-hint" class="form-hint">꿈에 등장한 대상이나 상황을 입력하세요</p>
+                    </form>
+                </div>
+                
+                <div class="popular-keywords">
+                    <h3>인기 검색어</h3>
+                    <div class="keyword-tags">
+                        <button class="keyword-tag" data-keyword="돼지">돼지</button>
+                        <button class="keyword-tag" data-keyword="뱀">뱀</button>
+                        <button class="keyword-tag" data-keyword="물">물</button>
+                        <button class="keyword-tag" data-keyword="불">불</button>
+                        <button class="keyword-tag" data-keyword="죽음">죽음</button>
+                        <button class="keyword-tag" data-keyword="비행">비행</button>
+                        <button class="keyword-tag" data-keyword="돈">돈</button>
+                        <button class="keyword-tag" data-keyword="이빨">이빨</button>
+                        <button class="keyword-tag" data-keyword="결혼">결혼</button>
+                        <button class="keyword-tag" data-keyword="아기">아기</button>
+                    </div>
+                </div>
+                
+                <div id="dream-result" class="result-container" aria-live="polite" hidden>
+                    <!-- 결과가 동적으로 삽입됩니다 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 광고 영역 -->
+        <aside class="ad-space" aria-label="광고 영역">
+            <div class="container">
+                <div class="ad-placeholder"></div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer Component Mount Point -->
+    <footer id="footer-component" class="footer" role="contentinfo"></footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Components -->
+    <script src="assets/js/components.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/dream.js"></script>
+    
+    <!-- Page Init -->
+    <script src="assets/js/page-init.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            PageInit.init('dream');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

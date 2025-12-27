@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="운세마루 - 12지신 띠별 운세. 쥐, 소, 호랑이, 토끼, 용, 뱀, 말, 양, 원숭이, 닭, 개, 돼지띠 운세를 무료로 확인하세요.">
+    <meta name="keywords" content="띠별운세, 12지신운세, 쥐띠운세, 소띠운세, 호랑이띠운세, 무료띠별운세">
+    <meta name="author" content="운세마루">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="띠별 운세 - 운세마루">
+    <meta property="og:description" content="12지신 띠별 운세를 무료로 확인하세요">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    
+    <title>띠별 운세 - 운세마루</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header Component Mount Point -->
+    <header id="header-component" class="header" role="banner"></header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main" role="main">
+        <!-- 띠별 운세 Section -->
+        <section id="zodiac" class="section zodiac-section active">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-dragon"></i> 띠별 운세</h2>
+                    <p class="section-desc">12지신 띠별로 보는 운세입니다. 본인의 띠를 선택하세요.</p>
+                </div>
+                
+                <div class="period-tabs" role="tablist" aria-label="기간 선택">
+                    <button class="tab-btn active" data-period="today" role="tab" aria-selected="true">오늘</button>
+                    <button class="tab-btn" data-period="week" role="tab" aria-selected="false">이번 주</button>
+                    <button class="tab-btn" data-period="year" role="tab" aria-selected="false">올해</button>
+                </div>
+                
+                <div class="zodiac-grid">
+                    <button class="zodiac-item" data-zodiac="rat" aria-label="쥐띠 운세 보기">
+                        <span class="zodiac-emoji">🐀</span>
+                        <span class="zodiac-name">쥐</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="ox" aria-label="소띠 운세 보기">
+                        <span class="zodiac-emoji">🐂</span>
+                        <span class="zodiac-name">소</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="tiger" aria-label="호랑이띠 운세 보기">
+                        <span class="zodiac-emoji">🐅</span>
+                        <span class="zodiac-name">호랑이</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="rabbit" aria-label="토끼띠 운세 보기">
+                        <span class="zodiac-emoji">🐇</span>
+                        <span class="zodiac-name">토끼</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="dragon" aria-label="용띠 운세 보기">
+                        <span class="zodiac-emoji">🐉</span>
+                        <span class="zodiac-name">용</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="snake" aria-label="뱀띠 운세 보기">
+                        <span class="zodiac-emoji">🐍</span>
+                        <span class="zodiac-name">뱀</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="horse" aria-label="말띠 운세 보기">
+                        <span class="zodiac-emoji">🐎</span>
+                        <span class="zodiac-name">말</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="sheep" aria-label="양띠 운세 보기">
+                        <span class="zodiac-emoji">🐏</span>
+                        <span class="zodiac-name">양</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="monkey" aria-label="원숭이띠 운세 보기">
+                        <span class="zodiac-emoji">🐒</span>
+                        <span class="zodiac-name">원숭이</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="rooster" aria-label="닭띠 운세 보기">
+                        <span class="zodiac-emoji">🐓</span>
+                        <span class="zodiac-name">닭</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="dog" aria-label="개띠 운세 보기">
+                        <span class="zodiac-emoji">🐕</span>
+                        <span class="zodiac-name">개</span>
+                    </button>
+                    <button class="zodiac-item" data-zodiac="pig" aria-label="돼지띠 운세 보기">
+                        <span class="zodiac-emoji">🐖</span>
+                        <span class="zodiac-name">돼지</span>
+                    </button>
+                </div>
+                
+                <div id="zodiac-result" class="result-container" aria-live="polite" hidden>
+                    <!-- 결과가 동적으로 삽입됩니다 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 광고 영역 -->
+        <aside class="ad-space" aria-label="광고 영역">
+            <div class="container">
+                <div class="ad-placeholder"></div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer Component Mount Point -->
+    <footer id="footer-component" class="footer" role="contentinfo"></footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Components -->
+    <script src="assets/js/components.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/fortune.js"></script>
+    
+    <!-- Page Init -->
+    <script src="assets/js/page-init.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            PageInit.init('zodiac');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="운세마루 - MBTI 유형별 운세. 16가지 MBTI 성격 유형에 맞는 오늘의 운세를 무료로 확인하세요.">
+    <meta name="keywords" content="MBTI운세, MBTI유형별운세, INTJ운세, INFP운세, ENFP운세, 무료MBTI운세">
+    <meta name="author" content="운세마루">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MBTI 운세 - 운세마루">
+    <meta property="og:description" content="MBTI 유형별 운세를 무료로 확인하세요">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    
+    <title>MBTI 운세 - 운세마루</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header Component Mount Point -->
+    <header id="header-component" class="header" role="banner"></header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main" role="main">
+        <!-- MBTI 운세 Section -->
+        <section id="mbti" class="section mbti-section active">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-brain"></i> MBTI 운세</h2>
+                    <p class="section-desc">당신의 MBTI 유형을 선택하면 오늘의 운세를 알려드립니다.</p>
+                </div>
+                
+                <div class="mbti-notice" role="alert">
+                    <i class="fas fa-info-circle"></i>
+                    <p>본 서비스는 재미를 위한 운세 콘텐츠이며, 공인된 심리검사가 아닙니다.</p>
+                </div>
+                
+                <div class="mbti-grid">
+                    <!-- 분석가형 -->
+                    <div class="mbti-group">
+                        <h3 class="mbti-group-title">분석가형</h3>
+                        <div class="mbti-buttons">
+                            <button class="mbti-btn" data-mbti="INTJ">INTJ</button>
+                            <button class="mbti-btn" data-mbti="INTP">INTP</button>
+                            <button class="mbti-btn" data-mbti="ENTJ">ENTJ</button>
+                            <button class="mbti-btn" data-mbti="ENTP">ENTP</button>
+                        </div>
+                    </div>
+                    <!-- 외교관형 -->
+                    <div class="mbti-group">
+                        <h3 class="mbti-group-title">외교관형</h3>
+                        <div class="mbti-buttons">
+                            <button class="mbti-btn" data-mbti="INFJ">INFJ</button>
+                            <button class="mbti-btn" data-mbti="INFP">INFP</button>
+                            <button class="mbti-btn" data-mbti="ENFJ">ENFJ</button>
+                            <button class="mbti-btn" data-mbti="ENFP">ENFP</button>
+                        </div>
+                    </div>
+                    <!-- 관리자형 -->
+                    <div class="mbti-group">
+                        <h3 class="mbti-group-title">관리자형</h3>
+                        <div class="mbti-buttons">
+                            <button class="mbti-btn" data-mbti="ISTJ">ISTJ</button>
+                            <button class="mbti-btn" data-mbti="ISFJ">ISFJ</button>
+                            <button class="mbti-btn" data-mbti="ESTJ">ESTJ</button>
+                            <button class="mbti-btn" data-mbti="ESFJ">ESFJ</button>
+                        </div>
+                    </div>
+                    <!-- 탐험가형 -->
+                    <div class="mbti-group">
+                        <h3 class="mbti-group-title">탐험가형</h3>
+                        <div class="mbti-buttons">
+                            <button class="mbti-btn" data-mbti="ISTP">ISTP</button>
+                            <button class="mbti-btn" data-mbti="ISFP">ISFP</button>
+                            <button class="mbti-btn" data-mbti="ESTP">ESTP</button>
+                            <button class="mbti-btn" data-mbti="ESFP">ESFP</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="mbti-result" class="result-container" aria-live="polite" hidden>
+                    <!-- 결과가 동적으로 삽입됩니다 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 광고 영역 -->
+        <aside class="ad-space" aria-label="광고 영역">
+            <div class="container">
+                <div class="ad-placeholder"></div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer Component Mount Point -->
+    <footer id="footer-component" class="footer" role="contentinfo"></footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Components -->
+    <script src="assets/js/components.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/mbti.js"></script>
+    
+    <!-- Page Init -->
+    <script src="assets/js/page-init.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            PageInit.init('mbti');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

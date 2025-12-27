@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="운세마루 - 무료 사주, 타로, 별자리 운세, 띠별 운세, MBTI 운세, 꿈해몽 서비스">
+    <meta name="keywords" content="운세, 타로, 사주, 별자리운세, 띠별운세, MBTI운세, 꿈해몽, 오늘의운세">
+    <meta name="author" content="운세마루">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="운세마루 - 무료 운세 서비스">
+    <meta property="og:description" content="오늘의 운세, 타로, 별자리, 띠별 운세를 무료로 확인하세요">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    
+    <title>운세마루 - 무료 운세 · 타로 · 사주</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header Component Mount Point -->
+    <header id="header-component" class="header" role="banner"></header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main" role="main">
+        <!-- Hero Section (Home) -->
+        <section id="home" class="section hero-section active">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-title">오늘 하루,<br>당신의 운세는?</h2>
+                        <p class="hero-desc">운세마루에서 무료로 확인하는<br>사주, 타로, 별자리 운세</p>
+                    </div>
+                    <!-- Hero Cards -->
+                    <div class="hero-cards">
+                        <a href="today.html" class="fortune-card">
+                            <div class="card-icon"><i class="fas fa-sun"></i></div>
+                            <h3>오늘의 운세</h3>
+                            <p>생년월일로 보는 오늘의 운세</p>
+                        </a>
+                        <a href="zodiac.html" class="fortune-card">
+                            <div class="card-icon"><i class="fas fa-dragon"></i></div>
+                            <h3>띠별 운세</h3>
+                            <p>12지신으로 보는 운세</p>
+                        </a>
+                        <a href="star.html" class="fortune-card">
+                            <div class="card-icon"><i class="fas fa-star"></i></div>
+                            <h3>별자리 운세</h3>
+                            <p>12별자리로 보는 운세</p>
+                        </a>
+                        <a href="tarot.html" class="fortune-card">
+                            <div class="card-icon"><i class="fas fa-cards"></i></div>
+                            <h3>타로 카드</h3>
+                            <p>카드가 전하는 메시지</p>
+                        </a>
+                        <a href="mbti.html" class="fortune-card">
+                            <div class="card-icon"><i class="fas fa-brain"></i></div>
+                            <h3>MBTI 운세</h3>
+                            <p>성격 유형별 운세</p>
+                        </a>
+                        <a href="dream.html" class="fortune-card">
+                            <div class="card-icon"><i class="fas fa-cloud-moon"></i></div>
+                            <h3>꿈해몽</h3>
+                            <p>꿈이 전하는 의미</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 광고 영역 -->
+        <aside class="ad-space" aria-label="광고 영역">
+            <div class="container">
+                <div class="ad-placeholder"></div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer Component Mount Point -->
+    <footer id="footer-component" class="footer" role="contentinfo"></footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Components -->
+    <script src="assets/js/components.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="assets/js/common.js"></script>
+    
+    <!-- Page Init -->
+    <script src="assets/js/page-init.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            PageInit.init('home');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="운세마루 - 12별자리 운세. 양자리, 황소자리, 쌍둥이자리, 게자리, 사자자리, 처녀자리, 천칭자리, 전갈자리, 사수자리, 염소자리, 물병자리, 물고기자리 운세를 무료로 확인하세요.">
+    <meta name="keywords" content="별자리운세, 12별자리, 양자리운세, 황소자리운세, 쌍둥이자리운세, 무료별자리운세">
+    <meta name="author" content="운세마루">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="별자리 운세 - 운세마루">
+    <meta property="og:description" content="12별자리 운세를 무료로 확인하세요">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    
+    <title>별자리 운세 - 운세마루</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header Component Mount Point -->
+    <header id="header-component" class="header" role="banner"></header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main" role="main">
+        <!-- 별자리 운세 Section -->
+        <section id="horoscope" class="section horoscope-section active">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-star"></i> 별자리 운세</h2>
+                    <p class="section-desc">12별자리로 보는 운세입니다. 본인의 별자리를 선택하세요.</p>
+                </div>
+                
+                <div class="period-tabs" role="tablist" aria-label="기간 선택">
+                    <button class="tab-btn active" data-period="today" role="tab" aria-selected="true">오늘</button>
+                    <button class="tab-btn" data-period="week" role="tab" aria-selected="false">이번 주</button>
+                    <button class="tab-btn" data-period="month" role="tab" aria-selected="false">이번 달</button>
+                </div>
+                
+                <div class="horoscope-grid">
+                    <button class="horoscope-item" data-sign="aries" aria-label="양자리 운세 보기">
+                        <span class="sign-symbol">♈</span>
+                        <span class="sign-name">양자리</span>
+                        <span class="sign-date">3.21~4.19</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="taurus" aria-label="황소자리 운세 보기">
+                        <span class="sign-symbol">♉</span>
+                        <span class="sign-name">황소자리</span>
+                        <span class="sign-date">4.20~5.20</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="gemini" aria-label="쌍둥이자리 운세 보기">
+                        <span class="sign-symbol">♊</span>
+                        <span class="sign-name">쌍둥이자리</span>
+                        <span class="sign-date">5.21~6.21</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="cancer" aria-label="게자리 운세 보기">
+                        <span class="sign-symbol">♋</span>
+                        <span class="sign-name">게자리</span>
+                        <span class="sign-date">6.22~7.22</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="leo" aria-label="사자자리 운세 보기">
+                        <span class="sign-symbol">♌</span>
+                        <span class="sign-name">사자자리</span>
+                        <span class="sign-date">7.23~8.22</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="virgo" aria-label="처녀자리 운세 보기">
+                        <span class="sign-symbol">♍</span>
+                        <span class="sign-name">처녀자리</span>
+                        <span class="sign-date">8.23~9.22</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="libra" aria-label="천칭자리 운세 보기">
+                        <span class="sign-symbol">♎</span>
+                        <span class="sign-name">천칭자리</span>
+                        <span class="sign-date">9.23~10.22</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="scorpio" aria-label="전갈자리 운세 보기">
+                        <span class="sign-symbol">♏</span>
+                        <span class="sign-name">전갈자리</span>
+                        <span class="sign-date">10.23~11.21</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="sagittarius" aria-label="사수자리 운세 보기">
+                        <span class="sign-symbol">♐</span>
+                        <span class="sign-name">사수자리</span>
+                        <span class="sign-date">11.22~12.21</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="capricorn" aria-label="염소자리 운세 보기">
+                        <span class="sign-symbol">♑</span>
+                        <span class="sign-name">염소자리</span>
+                        <span class="sign-date">12.22~1.19</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="aquarius" aria-label="물병자리 운세 보기">
+                        <span class="sign-symbol">♒</span>
+                        <span class="sign-name">물병자리</span>
+                        <span class="sign-date">1.20~2.18</span>
+                    </button>
+                    <button class="horoscope-item" data-sign="pisces" aria-label="물고기자리 운세 보기">
+                        <span class="sign-symbol">♓</span>
+                        <span class="sign-name">물고기자리</span>
+                        <span class="sign-date">2.19~3.20</span>
+                    </button>
+                </div>
+                
+                <div id="horoscope-result" class="result-container" aria-live="polite" hidden>
+                    <!-- 결과가 동적으로 삽입됩니다 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 광고 영역 -->
+        <aside class="ad-space" aria-label="광고 영역">
+            <div class="container">
+                <div class="ad-placeholder"></div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer Component Mount Point -->
+    <footer id="footer-component" class="footer" role="contentinfo"></footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Components -->
+    <script src="assets/js/components.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/fortune.js"></script>
+    
+    <!-- Page Init -->
+    <script src="assets/js/page-init.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            PageInit.init('horoscope');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="moonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b7ec8"/>
+      <stop offset="100%" style="stop-color:#e8a87c"/>
+    </linearGradient>
+  </defs>
+  <!-- Moon shape -->
+  <circle cx="50" cy="50" r="45" fill="url(#moonGradient)"/>
+  <!-- Moon crescent effect -->
+  <circle cx="65" cy="40" r="35" fill="#faf8ff"/>
+  <!-- Stars -->
+  <circle cx="25" cy="30" r="3" fill="#e8a87c"/>
+  <circle cx="35" cy="55" r="2" fill="#e8a87c"/>
+  <circle cx="20" cy="70" r="2.5" fill="#e8a87c"/>
+</svg>
+
+
+
+
+
+
+
+

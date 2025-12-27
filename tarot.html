@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="운세마루 - 무료 타로 카드 점. 오늘의 타로, 애정운, 직장운, 재물운 타로를 무료로 확인하세요.">
+    <meta name="keywords" content="타로카드, 무료타로, 오늘의타로, 애정운타로, 직장운타로, 재물운타로">
+    <meta name="author" content="운세마루">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="타로 카드 - 운세마루">
+    <meta property="og:description" content="무료 타로 카드 점을 확인하세요">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    
+    <title>타로 카드 - 운세마루</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header Component Mount Point -->
+    <header id="header-component" class="header" role="banner"></header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main" role="main">
+        <!-- 타로 Section -->
+        <section id="tarot" class="section tarot-section active">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-cards"></i> 타로 카드</h2>
+                    <p class="section-desc">마음을 집중하고 카드를 선택하세요. 카드가 당신에게 메시지를 전합니다.</p>
+                </div>
+                
+                <div class="tarot-type-selector">
+                    <button class="tarot-type-btn active" data-type="today" aria-label="오늘의 타로">
+                        <i class="fas fa-sun"></i>
+                        <span>오늘의 타로</span>
+                        <small>1장 선택</small>
+                    </button>
+                    <button class="tarot-type-btn" data-type="love" aria-label="애정운 타로">
+                        <i class="fas fa-heart"></i>
+                        <span>애정운</span>
+                        <small>3장 선택</small>
+                    </button>
+                    <button class="tarot-type-btn" data-type="career" aria-label="직장운 타로">
+                        <i class="fas fa-briefcase"></i>
+                        <span>직장운</span>
+                        <small>3장 선택</small>
+                    </button>
+                    <button class="tarot-type-btn" data-type="money" aria-label="재물운 타로">
+                        <i class="fas fa-coins"></i>
+                        <span>재물운</span>
+                        <small>3장 선택</small>
+                    </button>
+                </div>
+                
+                <div id="tarot-deck" class="tarot-deck" aria-label="타로 카드 덱">
+                    <!-- 카드가 동적으로 생성됩니다 -->
+                </div>
+                
+                <div id="tarot-selected" class="tarot-selected" hidden>
+                    <p class="selection-info">선택한 카드: <span id="selected-count">0</span> / <span id="total-count">1</span></p>
+                </div>
+                
+                <div id="tarot-result" class="result-container" aria-live="polite" hidden>
+                    <!-- 결과가 동적으로 삽입됩니다 -->
+                </div>
+                
+                <button id="tarot-reset" class="btn btn-secondary" hidden>
+                    <i class="fas fa-redo"></i> 다시 뽑기
+                </button>
+            </div>
+        </section>
+
+        <!-- 광고 영역 -->
+        <aside class="ad-space" aria-label="광고 영역">
+            <div class="container">
+                <div class="ad-placeholder"></div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer Component Mount Point -->
+    <footer id="footer-component" class="footer" role="contentinfo"></footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Components -->
+    <script src="assets/js/components.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/tarot.js"></script>
+    
+    <!-- Page Init -->
+    <script src="assets/js/page-init.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            PageInit.init('tarot');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
